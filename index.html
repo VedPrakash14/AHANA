@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="CSS/design.css" rel="stylesheet" type="text/css">
+<link href="animate.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	/* Style the navigation menu */
+.navbar {
+  width: 80%;
+  background-color: #555;
+  overflow: auto;
+  margin-left: 10%;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Style the current/active link */
+
+.active {
+  background-color: #4CAF50;
+}
+
+#top_div{
+  height:500px;
+  width: 80%;
+  margin-left: 10%;
+  background-color:rgba(200,199,199,0.6);
+  }
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+</style>
+</head>
+<body style="background-color:#e6e6e6;">
+	<!-- The navigation menu -->
+<div class="navbar" align="center">
+  <a class="active" href="index.html">index</a> 
+  <a href="About Me.html">About Me</a> 
+  <a class="#" href="Gallery.html">Gallery</a>
+    <a class="#" href="Contact Me.html">Contact me</a>
+
+</div>
+
+<div id="top_div" align="center" >
+<img id="img1" class="zoomInDown animated" style="margin-top: 20px; border-radius:200px;" src="ahana_sharma.jpg" width="400px" height="400px" alt="ahana_sharma"/>
+<h1 class="fontColorChange">
+  <marquee behavior="alternate" direction="left">
+      <font>AHANA SHARMA</font>
+    </marquee>
+</h1>
+</div>	
+
+
+
+
+<div class="footer">
+	<center>
+		<p>
+		
+		<b style="font-size: 24px;">Developed & maintained by:</b>
+		<br>
+		<b>
+		Ved Prakash Sharma
+		<br>
+		(Deputy Project Manager)
+		<br>
+		Indian Institute of Technology, Kanpur
+		<br>
+		Mob: 9208501461
+		<br>
+		Email: vpsharma@iitk.ac.in
+		<br>
+		vedprakash14@gmail.com
+		</b>
+<!--			<br> You are Visitor no : <?php include 'counter.php';?>
+-->		</p></center>
+</div>		
+	
+</body>
+</html>
